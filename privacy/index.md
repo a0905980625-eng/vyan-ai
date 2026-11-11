@@ -12,7 +12,7 @@ Vyan AI（以下稱「本 App」）是一款陪伴與情緒照顧 App。我們�
 
 ### 一句話版本
 
-你的日記、心情、評量、健康資料和你跟夥伴說的話，**都只存在你的裝置上，我們看不到，也不會傳到任何伺服器**。會離開你裝置的只有三樣：訂閱付款相關的紀錄，由 RevenueCat 處理，而且不會連結到你的身分；你自己打開「天氣共感」時，送給 Apple 查天氣用的大約位置（約 10 公里內）；以及你自己在星星商店按下「看一支短廣告」時，Google AdMob 為了播出那支廣告而收到的裝置與網路資訊（不個人化、不追蹤，見第 2d 節）。面部跟隨若你打開，臉只在這台裝置上用來轉動畫面上的夥伴，不保存、不上傳。如果你打開好友聊天的「即時送達」，你傳給朋友的訊息和照片會先在你的手機上鎖好，再經過**你自己的** iCloud 送到朋友手上，只有你們兩人打得開，我們沒有伺服器，也看不到內容（見第 2e 節）。
+你的日記、心情、評量、健康資料和你跟夥伴說的話，**都只存在你的裝置上，我們看不到，也不會傳到任何伺服器**。會離開你裝置的只有三樣：訂閱付款相關的紀錄，由 RevenueCat 處理，而且不會連結到你的身分；你自己打開「天氣共感」時，送給 Apple 查天氣用的大約位置（約 10 公里內）；以及你自己在星星商店按下「看一支短廣告」時，Google AdMob 為了播出那支廣告而收到的裝置與網路資訊（不個人化、不追蹤，見第 2d 節）。面部跟隨若你打開，臉只在這台裝置上用來轉動畫面上的夥伴，不保存、不上傳。如果你打開好友聊天的「即時送達」，你傳給朋友的訊息和照片會先在你的手機上鎖好，再經過 iCloud 送到朋友手上，只有你們兩人打得開，我們沒有伺服器，也看不到內容（見第 2e 節）。
 
 ### 1. 我們不收集的資料
 
@@ -76,15 +76,16 @@ Vyan AI（以下稱「本 App」）是一款陪伴與情緒照顧 App。我們�
 
 ### 2e. 好友聊天的即時送達（預設關閉）
 
-好友聊天平常是一條你自己分享出去的連結。打開「即時送達」後，訊息、禮物和照片改經過**你自己的 iCloud** 直接送到朋友手上，不經過我們，因為本 App 沒有伺服器。
+好友聊天平常是一條你自己分享出去的連結。打開「即時送達」後，訊息、禮物和照片改經過 **Apple 的 iCloud** 直接送到朋友手上，不經過我們，因為本 App 沒有伺服器。
 
 - **先在手機上鎖好：** 每支手機有一把只存在自己鑰匙圈裡的鑰匙，不進 iCloud、不進備份。你和朋友交換過邀請或訊息之後，兩支手機各自算出同一把「兩人鑰匙」。訊息文字、你的名字、內在小孩的名字和照片，都用它在手機上鎖好才上傳。**我們和 Apple 都打不開。**
-- **放在哪裡：** 鎖好的訊息放在你自己 iCloud 裡的一個「寄件匣」，只分享給那一位朋友讀。為了讓兩邊自動接通，App 會在 iCloud 的公用資料庫留一張「門鈴紙條」，上面寫著寄件匣的位置，也用朋友的公開鑰匙鎖起來，只有他打得開；紙條的位置由他的公開鑰匙算出，沒有拿過他邀請連結的人找不到。
-- **沒有鎖的部分：** 為了排序和顯示，寄件匣裡每則訊息還會帶著：你的隨機邀請碼、送出時間、禮物的種類與包裝、照片的長寬、內在小孩是哪一種動物。這些不會包含你寫的字或照片內容。
-- **還沒交換過鑰匙的朋友：** 舊版 App 的朋友沒有公開鑰匙時，文字會改放在 iCloud 本身的加密欄位，由 Apple 依你的 iCloud 設定加密保管；照片則一律要等交換過鑰匙才會送出。
+- **放在哪裡：** 鎖好的訊息放進本 App 在 iCloud 公用資料庫裡的一個「信箱」，所以**不佔你的 iCloud 空間**，你的 iCloud 滿了也照樣送得出去。信箱的編號由你們的兩人鑰匙算出來，只有你們兩人找得到；就算有人拿到，也只是一包打不開的資料。信最多放 14 天，之後由寄件人的 App 收回。
+- **門鈴紙條：** 為了讓朋友也拿到你的公開鑰匙，App 會在公用資料庫留一張「門鈴紙條」，寫著你的邀請碼、名字和公開鑰匙，用朋友的公開鑰匙鎖起來，只有他打得開；紙條的位置由他的公開鑰匙算出，沒有拿過他邀請連結的人找不到。
+- **沒有鎖的部分：** 信箱裡每封信看得到的只有信箱編號和送出時間，用來找信。誰寄的、寫了什麼、禮物、照片和內在小孩，全部都在鎖好的那一包裡。
+- **還沒交換過鑰匙的朋友：** 舊版 App 的朋友沒有公開鑰匙時，訊息改放在你自己 iCloud 裡的一個「寄件匣」，只分享給那一位朋友；文字放在 iCloud 本身的加密欄位，由 Apple 依你的 iCloud 設定加密保管，邀請碼、時間、禮物種類和內在小孩的動物種類沒有加密。這條路會用到你自己的 iCloud 空間。照片一律要等交換過鑰匙才會送出。
 - **照片：** 送出前會在手機上縮小並重新壓縮，拍攝地點、相機與拍攝時間等資料都不會帶過去。收到的照片只存在這台裝置上，不進備份。
 - **通知：** 新訊息到了的通知只寫「有朋友傳來一則訊息」，不顯示是誰、寫了什麼。
-- **關掉或刪除：** 關掉「即時送達」、封鎖一位朋友，或「刪除我的一切」時，App 會收回你的寄件匣和你留的門鈴紙條；朋友手機上已經收到的訊息，留在他那一邊。「刪除我的一切」也會換掉這支手機的聊天鑰匙。
+- **關掉或刪除：** 關掉「即時送達」、封鎖一位朋友，或「刪除我的一切」時，App 會收回你放在信箱裡的信、你的寄件匣和你留的門鈴紙條；朋友手機上已經收到的訊息，留在他那一邊。「刪除我的一切」也會換掉這支手機的聊天鑰匙。
 
 ### 3. 追蹤與廣告
 
@@ -92,7 +93,7 @@ Vyan AI（以下稱「本 App」）是一款陪伴與情緒照顧 App。我們�
 
 ### 4. 刪除你的資料
 
-- **刪除 App 內的資料：** 在 App 的「設定 ▸ 我的資料 ▸ 刪除我的一切」，可以刪除本 App 存在這台裝置上的所有內容，包括日記、心情、評量、記憶、聊天紀錄與照片、出生年份與設定，並收回你在 iCloud 的聊天寄件匣與門鈴紙條（第 2e 節）。這個動作無法復原。
+- **刪除 App 內的資料：** 在 App 的「設定 ▸ 我的資料 ▸ 刪除我的一切」，可以刪除本 App 存在這台裝置上的所有內容，包括日記、心情、評量、記憶、聊天紀錄與照片、出生年份與設定，並收回你在 iCloud 的聊天信件、寄件匣與門鈴紙條（第 2e 節）。這個動作無法復原。
 - **廣告資料：** Google 在播放廣告時收到的資料由 Google 保存與處理；你可以依 Google 的隱私權政策（https://policies.google.com/privacy）向 Google 要求查詢或刪除。
 - **刪除 App：** 刪除本 App 也會一併刪除它存在裝置上的所有資料。
 - **健康資料：** 寫入 Apple「健康」的正念分鐘數屬於「健康」App，請在「健康」App 中管理或刪除。
@@ -124,7 +125,7 @@ Vyan AI ("the App") is a companion and emotional wellbeing app. We believe what 
 
 ### The short version
 
-Your journal, moods, questionnaires, health data and what you say to your companion **stay on your device. We cannot see them, and they are never sent to any server.** Only three things leave your device: your subscription purchase record, which is handled by RevenueCat and is not linked to your identity; if you turn on Weather yourself, an approximate location (within about 10 km) sent to Apple to look up the weather; and, if you tap "Watch a short ad" in the star shop yourself, the device and network information Google AdMob receives to play that ad (non-personalized and not used for tracking — see section 2d). If you turn on Face follow, your face is used only on this device to turn the on-screen companion. It is not saved and not sent anywhere. If you turn on instant delivery for friend chat, the messages and photos you send are locked on your phone first and then travel through **your own** iCloud to your friend. Only the two of you can open them; we have no server and cannot see them (see section 2e).
+Your journal, moods, questionnaires, health data and what you say to your companion **stay on your device. We cannot see them, and they are never sent to any server.** Only three things leave your device: your subscription purchase record, which is handled by RevenueCat and is not linked to your identity; if you turn on Weather yourself, an approximate location (within about 10 km) sent to Apple to look up the weather; and, if you tap "Watch a short ad" in the star shop yourself, the device and network information Google AdMob receives to play that ad (non-personalized and not used for tracking — see section 2d). If you turn on Face follow, your face is used only on this device to turn the on-screen companion. It is not saved and not sent anywhere. If you turn on instant delivery for friend chat, the messages and photos you send are locked on your phone first and then travel through iCloud to your friend. Only the two of you can open them; we have no server and cannot see them (see section 2e).
 
 ### 1. Data we do not collect
 
@@ -188,15 +189,16 @@ The star shop has a button: "Watch a short ad for 10 star coins". The ads are pr
 
 ### 2e. Instant delivery for friend chat (off by default)
 
-Friend chat normally travels as a link you share yourself. With instant delivery on, messages, gifts and photos go through **your own iCloud** straight to your friend instead. They do not pass through us, because the App has no server.
+Friend chat normally travels as a link you share yourself. With instant delivery on, messages, gifts and photos go through **Apple's iCloud** straight to your friend instead. They do not pass through us, because the App has no server.
 
 - **Locked on your phone first:** each phone has its own key, kept only in that phone's Keychain, never in iCloud or backups. Once you and a friend have exchanged an invite or a message, both phones work out the same "pair key". Message text, your name, your inner child's name and photos are locked with it on your phone before upload. **Neither we nor Apple can open them.**
-- **Where they are kept:** locked messages sit in an "outbox" in your own iCloud, shared with that one friend only. So the two of you can connect automatically, the App leaves a "doorbell note" in iCloud's public database saying where the outbox is. The note is locked with your friend's public key so only they can open it, and its location is derived from their public key, so no one who has not had their invite link can find it.
-- **What is not locked:** to sort and display messages, each one in the outbox also carries your random invite code, the time it was sent, the kind of gift and its wrapping, a photo's width and height, and which animal your inner child is. None of this includes what you wrote or what a photo shows.
-- **Friends who have not exchanged keys yet:** if a friend's older version of the App has no public key, text is stored in iCloud's own encrypted fields instead, kept by Apple under your iCloud settings. Photos are only ever sent once keys have been exchanged.
+- **Where they are kept:** locked messages go into a "mailbox" in the App's iCloud public database, so they **do not use your iCloud storage** and still go through when your iCloud is full. The mailbox number is derived from your pair key, so only the two of you can find it; anyone else who came across it would see only data they cannot open. Letters stay for at most 14 days, then the sender's App takes them back.
+- **Doorbell note:** so your friend also gets your public key, the App leaves a "doorbell note" in the public database with your invite code, name and public key. The note is locked with your friend's public key so only they can open it, and its location is derived from their public key, so no one who has not had their invite link can find it.
+- **What is not locked:** each letter in the mailbox shows only the mailbox number and the time it was sent, used to find it. Who sent it, what it says, the gift, the photo and your inner child are all inside the locked part.
+- **Friends who have not exchanged keys yet:** if a friend's older version of the App has no public key, messages go into an "outbox" in your own iCloud instead, shared with that one friend only. Text is stored in iCloud's own encrypted fields, kept by Apple under your iCloud settings; your invite code, the time, the kind of gift and your inner child's animal are not encrypted. This path uses your own iCloud storage. Photos are only ever sent once keys have been exchanged.
 - **Photos:** before sending, photos are resized and re-compressed on your phone; location, camera and capture-time details are not carried over. Photos you receive are kept only on this device and are excluded from backups.
 - **Notifications:** a new-message notification only says that a friend sent a message, never who or what.
-- **Turning it off or deleting:** turning instant delivery off, blocking a friend, or using Delete everything takes back your outboxes and the doorbell notes you left. Messages already received stay on your friend's phone. Delete everything also replaces this phone's chat key.
+- **Turning it off or deleting:** turning instant delivery off, blocking a friend, or using Delete everything takes back your letters in the mailbox, your outboxes and the doorbell notes you left. Messages already received stay on your friend's phone. Delete everything also replaces this phone's chat key.
 
 ### 3. Tracking and advertising
 
@@ -204,7 +206,7 @@ Apart from the rewarded ads in section 2d, which play only when you tap, the App
 
 ### 4. Deleting your data
 
-- **In the App:** Settings ▸ My data ▸ Delete everything removes everything the App stores on this device, including your journal, moods, questionnaires, memories, chats and photos, year of birth and settings, and takes back your chat outboxes and doorbell notes in iCloud (section 2e). This cannot be undone.
+- **In the App:** Settings ▸ My data ▸ Delete everything removes everything the App stores on this device, including your journal, moods, questionnaires, memories, chats and photos, year of birth and settings, and takes back your chat letters, outboxes and doorbell notes in iCloud (section 2e). This cannot be undone.
 - **Ad data:** data Google receives when it plays an ad is held and processed by Google; you can ask Google to access or delete it under Google's privacy policy (https://policies.google.com/privacy).
 - **Deleting the App** also removes all of its data from your device.
 - **Health data:** Mindful Minutes saved to Apple Health belong to the Health app. Manage or delete them there.
